@@ -1,6 +1,6 @@
 package taller3.televisores;
 public class Control {
-	TV tv;
+	public TV tv;
 	
 	public void enlazar(TV tv) {
 		this.tv=tv;
@@ -52,23 +52,5 @@ public class Control {
 	}
 	public void setTv(TV tv) {
 		this.tv = tv;
-	}
-	
-	
-	public static void main(String[] args) {
-		Marca marca1=new Marca("samsung");
-		TV tv1=new TV(marca1,true);
-		
-		Control control1=new Control();
-		
-		tv1.setControl(control1);
-		control1.enlazar(tv1);
-		
-		control1.setCanal(8);
-		control1.setCanal(9);
-		
-		System.out.println(tv1.canal);
-		System.out.println(control1.tv.canal);
-		
 	}
 }
